@@ -14,6 +14,13 @@ class AopPlugin implements Plugin<Project> {
 
     @Override
     void apply(Project project) {
+        println 'helloya'
+    }
+
+    /**
+     * 读取自定义配置信息
+     */
+    void readExtension(Project project) {
         println 'project(' + project.name + ') apply aop plugin'
         // 读取自定义配置
         project.extensions.create(AopExtension.EXT_NAME, AopExtension)
