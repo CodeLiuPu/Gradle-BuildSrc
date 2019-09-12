@@ -4,13 +4,16 @@ package com.update.plugin.hello
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 
+/**
+ * @author : liupu
+ * date   : 2019/9/12
+ * desc   : 输出 HelloWorld
+ * github : https://github.com/CodeLiuPu/
+ */
 class HelloPlugin implements Plugin<Project> {
 
-    final String taskName = "task_hello"
     @Override
     void apply(Project project) {
-        project.task(taskName){
-            println "Hello Gradle"
-        }
+        project.logger.error 'Hello Gradle'
     }
 }
