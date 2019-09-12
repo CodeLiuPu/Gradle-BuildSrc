@@ -15,13 +15,16 @@ dependencies {
     implementation localGroovy()
 }
 
-
-
 gradlePlugin {
     plugins {
-        readmeCore {
-            id = 'hello-plugin'
-            implementationClass = 'com.update.plugin.HelloPlugin'
+        pluginHello {
+            id = 'plugin-hello'
+            implementationClass = 'com.update.plugin.hello.HelloPlugin'
+        }
+
+        pluginAop {
+            id = 'plugin-aop'
+            implementationClass = 'com.update.plugin.aop.AopPlugin'
         }
     }
 }

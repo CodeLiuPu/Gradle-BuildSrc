@@ -1,6 +1,7 @@
 apply {
     plugin 'com.android.application'
-    plugin 'hello-plugin'
+//    plugin 'plugin-hello'
+    plugin 'plugin-aop'
 }
 
 
