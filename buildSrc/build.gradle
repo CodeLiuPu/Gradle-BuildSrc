@@ -1,3 +1,5 @@
+
+
 repositories {
     mavenCentral()
     google()
@@ -14,7 +16,8 @@ dependencies {
     implementation gradleApi()
     implementation localGroovy()
     implementation 'com.android.tools.build:gradle:3.1.4'
-
+    implementation 'org.ow2.asm:asm:5.0.3'
+    implementation 'org.ow2.asm:asm-commons:5.0.3'
 }
 
 gradlePlugin {
@@ -30,6 +33,7 @@ gradlePlugin {
         }
     }
 }
+
 
 //sourceSets {
 //    main {

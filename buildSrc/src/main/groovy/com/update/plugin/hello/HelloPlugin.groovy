@@ -14,6 +14,6 @@ class HelloPlugin implements Plugin<Project> {
 
     @Override
     void apply(Project project) {
-        project.logger.error 'Hello Gradle'
+        println 'Hello Gradle'
     }
 }
