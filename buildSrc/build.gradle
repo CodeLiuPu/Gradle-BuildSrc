@@ -1,15 +1,13 @@
-
+apply {
+    plugin 'groovy'
+    plugin 'maven'
+    plugin 'java-gradle-plugin'
+}
 
 repositories {
     mavenCentral()
     google()
     jcenter()
-}
-
-apply {
-     plugin 'groovy'
-     plugin 'maven'
-     plugin 'java-gradle-plugin'
 }
 
 dependencies {
@@ -27,13 +25,17 @@ gradlePlugin {
             implementationClass = 'com.update.plugin.hello.HelloPlugin'
         }
 
+        pluginTimer {
+            id = 'plugin-timer'
+            implementationClass = 'com.update.plugin.timer.TimerPlugin'
+        }
+
         pluginAop {
             id = 'plugin-aop'
             implementationClass = 'com.update.plugin.aop.AopPlugin'
         }
     }
 }
-
 
 //sourceSets {
 //    main {

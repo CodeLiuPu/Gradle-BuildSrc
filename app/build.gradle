@@ -1,11 +1,9 @@
 apply {
     plugin 'com.android.application'
 //    plugin 'plugin-hello'
-    plugin 'plugin-aop'
+//    plugin 'plugin-timer'
+//    plugin 'plugin-aop'
 }
-
-
-
 
 android {
     compileSdkVersion 28
