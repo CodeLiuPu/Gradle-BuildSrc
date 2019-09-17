@@ -14,6 +14,11 @@ class HelloPlugin implements Plugin<Project> {
 
     @Override
     void apply(Project project) {
-        println 'Hello Gradle'
+        String bool = ""
+        if (bool){
+            println 'Hello Gradle'
+        } else {
+            println 'World Gradle'
+        }
     }
 }
